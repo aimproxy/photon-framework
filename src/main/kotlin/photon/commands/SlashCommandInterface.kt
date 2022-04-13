@@ -1,9 +1,9 @@
 package photon.commands
 
-interface SlashCommand {
+interface SlashCommandInterface {
     suspend fun onSlashCommandInteraction(
         context: SlashCommandContext,
-        args: SlashCommandArguments
+        args: SlashCommandArguments,
     )
 
 }
